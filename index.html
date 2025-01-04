@@ -7,15 +7,44 @@
 <body>
     <div id="main">
         <h1>TIC TAC TOE</h1>
+    <h3 id="timer">TIMER</h3>
+    <div class="tt"></div>
+    <div id="tc">
+        <div id="display">
+            00.00.00.00
+        </div>
+        <div id="controls">
+            <button id="startBtn" onclick="start()">Start</button>
+            <button id="stopBtn" onclick="stop()">Stop</button>
+            <button id="resetBtn" onclick="reset()">Reset</button>
+        </div>
+    </div>
+ 
         <p id="ins">
-            Tap on a box to play.<br><br>
-            <b>Player X</b> starts first, followed by <b>Player O</b>.
+            Tap on a box to play.
         </p>
         <div id="board" class="board"></div>
         <br>
         <button id="reset" class="reset">RESET</button>
         <p id="message" class="message"></p>
     </div>
+    <div id="app">
+        <div class="scoreboard">
+            <div class="scoreboard__name scoreboard__name--one">Player One</div>
+            <div class="scoreboard__name scoreboard__name--two">PlayerTwo</div>
+           <div class="scoreboard__score">0</div>
+            <div class="scoreboard__score">0</div>
+            <div class="scoreboard__controls" id="button">
+                <button class="scoreboard__control-button">-</button>
+                <button class="scoreboard__control-button">+</button>
+            </div>
+            <div class="scoreboard__controls" id="button">
+                <button class="scoreboard__control-button">-</button>
+                <button class="scoreboard__control-button">+</button>
+            </div>
+        </div>
+</div> 
+   
     <script src="./main.js"></script>
 </body>
 
